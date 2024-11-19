@@ -29,7 +29,7 @@ services:
       - ${INVENTORY_MANAGEMENT_SERVICE_START_PROFILE}
 
   postgres:
-    image: debezium/example-postgres:latest
+    image: debezium/example-postgres:3.0.0.Final
     container_name: postgres
     env_file:
       - ./.env
